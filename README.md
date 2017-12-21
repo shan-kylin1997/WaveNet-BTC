@@ -13,7 +13,7 @@ Also some code was used from the Fast WaveNet model:
 
 (3) [Fast Wavenet Generation Algorithm](https://arxiv.org/abs/1611.09482)
 
-The model was run on only a single day's at a time at 1-minute resolution. The model was fit on data up to 6pm, then generated a dynamic forecast forward for the rest of the day. Sample foecast on the most recent day in the data set:
+The model was run on only indavidual day's data at a time at 1-minute resolution. The model was fit on data up to 6pm, then generated a dynamic forecast forward for the rest of the day. Sample foecast on the most recent day in the data set:
 
 ![Coinbase Price on 2017-10-19 by minute](https://github.com/kykosic/WaveNet-BTC/blob/master/images/sample_output.png "Sample forecast of most recent date in data set")
 
