@@ -18,7 +18,8 @@ The model was run on only indavidual day's data at a time at 1-minute resolution
 ![Coinbase Price on 2017-10-19 by minute](https://github.com/kykosic/WaveNet-BTC/blob/master/images/sample_output.png "Sample forecast of most recent date in data set")
 
 ## Setup and Requirements
-Python 2.7 (The only portion of the code incomparable with Python 3 is the use of dict.iteritems() instead of dict.items())
+Python 2.7 (The only portion of the code incompatible with Python 3 is the use of dict.iteritems() instead of dict.items())
+
 Packages:
 * Numpy
 * Pandas
