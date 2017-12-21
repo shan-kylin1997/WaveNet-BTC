@@ -185,6 +185,7 @@ class Model(object):
         saver = tf.train.Saver(var_list=tf.trainable_variables(), max_to_keep=1)
         checkpoint_path = os.path.join(self.run_dir, 'model.ckpt')
         run_options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
+        print("Writing TensorBoard log to %s" % self.run_dir)
 
         # Sort input dictionaries into the feed dictionary
         feed_dict = dict()
