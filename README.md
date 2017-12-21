@@ -17,6 +17,7 @@ Packages:
 * TensorFlow
 * Matplotlib
 * Mpld3 (optional, used to make the plots interactive)
+
 Download the Bitcoin Historical Data and unzip it into the ./data folder. The data can be found here:
 [Bitcoin Historical Data - Kaggle](https://www.kaggle.com/mczielinski/bitcoin-historical-data)
 
