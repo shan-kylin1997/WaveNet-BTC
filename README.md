@@ -1,10 +1,16 @@
 # WaveNet-BTC
 This repository contains an implementation of the WaveNet model used for time series forecasting, particularly on intra-day Bitcoin exchange data.
+
 The general architecture used for this implementation was taken from: 
+
 (1) [Conditional Time Series Forecasting with Convolutional Neural Networks](https://arxiv.org/abs/1703.04691)
+
 The original WaveNet paper:
+
 (2) [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/abs/1609.03499)
+
 Also some code was used from the Fast WaveNet model:
+
 (3) [Fast Wavenet Generation Algorithm](https://arxiv.org/abs/1611.09482)
 
 ![Coinbase Price on 2017-10-19 by minute](https://github.com/kykosic/WaveNet-BTC/blob/master/images/sample_output.png "Sample forecast of most recent date in data set")
