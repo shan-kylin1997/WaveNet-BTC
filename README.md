@@ -7,11 +7,11 @@ The general architecture used for this implementation was taken from:
 
 The original WaveNet paper:
 
-(2) [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/abs/1609.03499)
+(2) [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/abs/1609.03499) [GitHub](https://github.com/ibab/tensorflow-wavenet)
 
 Also some code was used from the Fast WaveNet model:
 
-(3) [Fast Wavenet Generation Algorithm](https://arxiv.org/abs/1611.09482)
+(3) [Fast Wavenet Generation Algorithm](https://arxiv.org/abs/1611.09482) [GitHub](https://github.com/tomlepaine/fast-wavenet)
 
 The model was run on only indavidual day's data at a time at 1-minute resolution. The model was fit on data up to 6pm, then generated a dynamic forecast forward for the rest of the day. Sample foecast on the most recent day in the data set (additional samples can be found in the /images folder):
 
