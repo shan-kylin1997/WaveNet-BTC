@@ -163,7 +163,7 @@ class Model(object):
                 self.optimizers[field] = tf.train.AdamOptimizer(self.learning_rate).minimize(self.costs[field])
 
         # Tensorboard output
-        run_id = ''.join(random.choice(string.uppercase) for x in range(6))
+        run_id = ''.join(random.choice(string.ascii_uppercase) for x in range(6))
         self.run_dir = os.path.join(self.logdir, run_id)
         self.writer = tf.summary.FileWriter(self.run_dir)
         self.writer.add_graph(tf.get_default_graph())
@@ -266,12 +266,12 @@ class Normalizer(object):
             self.norm_map[c] = (df[c].mean(), df[c].std())
     
     def transform(self, df):
-        for c, (m, s) in self.norm_map.iteritems():
+        for c, (m, s) in self.norm_map.items():
             df.loc[:, c] = (df[c] - m) / s
         return df
 
     def undo_transform(self, df, suffix=None):
-        for c, (m, s) in self.norm_map.iteritems():
+        for c, (m, s) in self.norm_map.items():
             df.loc[:, c] = df[c] * s + m
             if suffix is not None:
                 df.loc[:, c + suffix] = df[c + suffix] * s + m
